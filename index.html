@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Warszawa</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <select id="stations" onchange="changeStation()">
+        <option value="https://stream.rcs.revma.com/ypqt40u0x1zuv">
+          Radio Kampus
+        </option>
+        <option value="https://stream.open.fm/168">Radio Wnet</option>
+        <option value="https://stream.rcs.revma.com/ye5kghkgcm0uv">
+          Radio Kapitał
+        </option>
+      </select>
+      <audio id="radioPlayer" controls>
+        <source
+          src="https://stream.rcs.revma.com/ypqt40u0x1zuv"
+          type="audio/mpeg"
+        />
+        Twoja przeglądarka nie obsługuje odtwarzacza audio.
+      </audio>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

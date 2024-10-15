@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #001f33; /* Granatowe tło */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ukrycie przewijania */
+}
+
+.container {
+  position: relative;
+  margin-top: 50px;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px;
+  width: 300px; /* Wyrównanie do tej samej szerokości */
+  background-color: rgba(255, 255, 255, 0.8); /* Tło dla lepszego widoku */
+  border-radius: 5px; /* Zaokrąglenie rogów */
+  border: 1px solid #ccc; /* Obramowanie */
+}
+
+audio {
+  margin-top: 20px;
+  width: 300px; /* Utrzymanie tej samej szerokości */
+  border-radius: 5px; /* Zaokrąglenie rogów odtwarzacza */
+  border: 1px solid #ccc; /* Obramowanie odtwarzacza */
+}
+
+/* Styl dla nut */
+.note {
+  position: absolute;
+  width: 30px; /* Zwiększenie rozmiaru nuty */
+  height: 30px; /* Zwiększenie rozmiaru nuty */
+  background-image: url("https://cdn-icons-png.flaticon.com/512/2912/2912120.png"); /* Użyj URL z Flaticon */
+  background-size: cover; /* Dopasowanie obrazka */
+  opacity: 0.8;
+  animation: float 3s infinite ease-in-out; /* Dodanie animacji drgania */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Mniejsza odległość drgania */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
